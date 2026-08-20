@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="brand-option1/favicon/mercado-negro-icon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="brand-option1/favicon/mercado-negro-icon-192.png">
-  <link rel="shortcut icon" href="brand-option1/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="brand-option1/favicon/mercado-negro-icon-180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand-optionc/favicon/mercado-negro-icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="brand-optionc/favicon/mercado-negro-icon-192.png">
+  <link rel="shortcut icon" href="brand-optionc/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand-optionc/favicon/mercado-negro-icon-180.png">
   <meta name="theme-color" content="#090908">
   <title>Mercado Negro — Pastelería &amp; Catering</title>
   <meta name="description" content="Mercado Negro — Pastelería y catering artesanal por Martha Domínguez. Pasteles de autor, postres, antipastos y tablas de charcutería a pedido.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mercado Negro — Pastelería &amp; Catering">
   <meta property="og:description" content="Pastelería y catering artesanal por Martha Domínguez. Pasteles de autor, postres, antipastos y tablas de charcutería a pedido.">
-  <meta property="og:image" content="https://eurekawebsites.github.io/mercado-negro/brand-option1/social/mercado-negro-social-share-1200x630.png">
+  <meta property="og:image" content="https://eurekawebsites.github.io/mercado-negro/brand-optionc/social/mercado-negro-social-share-1200x630.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://eurekawebsites.github.io/mercado-negro/">
@@ -21,20 +21,21 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mercado Negro — Pastelería &amp; Catering">
   <meta name="twitter:description" content="Pastelería y catering artesanal por Martha Domínguez.">
-  <meta name="twitter:image" content="https://eurekawebsites.github.io/mercado-negro/brand-option1/social/mercado-negro-social-share-1200x630.png">
+  <meta name="twitter:image" content="https://eurekawebsites.github.io/mercado-negro/brand-optionc/social/mercado-negro-social-share-1200x630.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/mn-brand-tokens.css">
   <style>
     /* ══════════════════════════════════════════════════════════
-       Mercado Negro website — APPROVED OPTION 1 (locked).
-       Black/near-black + cream/ivory primary; gold restrained to
-       accents/details only — no chocolate/brown surfaces. Primary
-       mark = supplied full lockup (seal + script "Mercado Negro" +
-       gold divider + "BY MARTHA DOMÍNGUEZ" byline), used as
-       delivered, not redrawn. See brand-option1/ and
-       css/mn-brand-tokens.css.
+       Mercado Negro website — APPROVED Option 1 logo + Option C
+       UI palette (Black + Champagne), locked.
+       Black/near-black dominant, ivory primary text/logo, champagne
+       restrained accent only — no chocolate/brown surfaces, no
+       dusty-rose primary CTA. Primary mark = supplied full lockup
+       (seal + script "Mercado Negro" + gold divider + "BY MARTHA
+       DOMÍNGUEZ" byline), used as delivered, not redrawn.
+       See brand-optionc/ and css/mn-brand-tokens.css.
        No dedicated dessert photography exists yet — see
        MN-BRAND-NOTES.md.
        ══════════════════════════════════════════════════════════ */
@@ -128,7 +129,7 @@
       text-align: center;
       padding: 140px 24px 90px;
       background:
-        radial-gradient(ellipse 65% 55% at 50% 8%, rgba(201,168,118,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 65% 55% at 50% 8%, rgba(216,199,158,0.07) 0%, transparent 60%),
         linear-gradient(175deg, var(--mn-black) 0%, var(--mn-charcoal) 70%);
       border-bottom: 1px solid var(--mn-border);
       overflow: hidden;
@@ -192,25 +193,28 @@
       margin-bottom: 44px;
     }
 
+    /* Primary CTA — Option C outline treatment: near-black fill,
+       champagne border, ivory text. No filled color block. */
     .hero-cta {
       position: relative;
       z-index: 1;
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--mn-rose);
-      color: var(--mn-cream);
+      background: var(--mn-button-fill);
+      border: 1px solid var(--mn-button-border);
+      color: var(--mn-button-text);
       font-family: var(--mn-serif);
       font-size: 0.8rem;
       letter-spacing: 2px;
       text-transform: uppercase;
       font-weight: 500;
-      padding: 16px 36px;
+      padding: 15px 35px;
       border-radius: 999px;
-      transition: opacity 0.2s, transform 0.15s;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
     }
-    .hero-cta:hover { opacity: 0.88; transform: translateY(-1px); }
-    .hero-cta:focus-visible { outline: 2px solid var(--mn-gold); outline-offset: 3px; }
+    .hero-cta:hover { background: var(--mn-button-fill-hover); border-color: var(--mn-champagne-soft); transform: translateY(-1px); }
+    .hero-cta:focus-visible { outline: 2px solid var(--mn-champagne); outline-offset: 3px; }
 
     /* ── SECTION BASE ── */
     section {
@@ -327,7 +331,7 @@
       border-top: 1px solid var(--mn-border);
       text-align: center;
       background:
-        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(201,168,118,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(216,199,158,0.05) 0%, transparent 60%),
         var(--mn-charcoal);
     }
 
@@ -416,16 +420,19 @@
     .form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: var(--mn-gold); }
     .form-field textarea { resize: vertical; min-height: 100px; }
     .form-field select option { background: var(--mn-charcoal); }
+    /* Primary CTA — Option C outline treatment: near-black fill,
+       champagne border, ivory text. No filled color block. */
     .form-submit {
-      width: 100%; background: var(--mn-rose); color: var(--mn-cream); border: none;
+      width: 100%; background: var(--mn-button-fill); color: var(--mn-button-text);
+      border: 1px solid var(--mn-button-border);
       border-radius: var(--mn-radius-sm); padding: 13px; font-family: var(--mn-serif); font-size: 0.78rem;
       letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
-      cursor: pointer; transition: opacity 0.2s, transform 0.15s; margin-top: 4px;
+      cursor: pointer; transition: background 0.2s, border-color 0.2s, transform 0.15s; margin-top: 4px;
     }
-    .form-submit:hover { opacity: 0.88; transform: translateY(-1px); }
+    .form-submit:hover { background: var(--mn-button-fill-hover); border-color: var(--mn-champagne-soft); transform: translateY(-1px); }
     .form-msg { margin-top: 12px; font-size: 0.8rem; text-align: center; display: none; padding: 10px; border-radius: var(--mn-radius-sm); }
     .form-msg.ok { display: block; background: rgba(52,211,153,0.08); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
-    .form-msg.err { display: block; background: var(--mn-rose-dim); color: var(--mn-rose); border: 1px solid rgba(139,107,106,0.4); }
+    .form-msg.err { display: block; background: rgba(224,122,95,0.1); color: #e07a5f; border: 1px solid rgba(224,122,95,0.35); }
 
     /* ── FOOTER ── */
     footer {
@@ -470,7 +477,7 @@
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="#" aria-label="Mercado Negro — inicio">
-      <img src="brand-option1/logo/mercado-negro-option1-seal-transparent.webp" alt="" width="522" height="522">
+      <img src="brand-optionc/logo/mercado-negro-option1-seal-transparent.webp" alt="" width="522" height="522">
       <span>Mercado Negro</span>
     </a>
     <ul class="nav-links">
@@ -489,7 +496,7 @@
 
     <img
       class="hero-lockup"
-      src="brand-option1/logo/mercado-negro-option1-full-lockup-transparent.webp"
+      src="brand-optionc/logo/mercado-negro-option1-full-lockup-transparent.webp"
       alt="Mercado Negro — by Martha Domínguez"
       width="1295" height="893"
     >
@@ -597,17 +604,17 @@
 
       <div class="contact-buttons">
         <a class="contact-btn" href="https://wa.me/5215517284050" target="_blank" rel="noopener noreferrer">
-          <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="#C9A876"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="#D8C79E"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <span class="contact-btn-label">
             <span class="contact-btn-type">WhatsApp</span>
             <span>+52 56 5791 7967</span>
           </span>
         </a>
         <a class="contact-btn" href="https://www.instagram.com/mercadonegrobymarthadominguez" target="_blank" rel="noopener noreferrer">
-          <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="none" stroke="#C9A876" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="contact-btn-icon" viewBox="0 0 24 24" fill="none" stroke="#D8C79E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
             <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.5" cy="6.5" r="0.5" fill="#C9A876"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="#D8C79E"/>
           </svg>
           <span class="contact-btn-label">
             <span class="contact-btn-type">Instagram</span>
