@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Negro — Opciones de color</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #080F13;
+      font-family: 'Lora', serif;
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    h1 {
+      font-family: 'Alex Brush', cursive;
+      color: white;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .section-title {
+      color: rgba(255,255,255,0.35);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      max-width: 460px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 10px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 460px;
+    }
+    .option {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #080F13;
+    }
+    .option-header {
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .option-name { color: white; font-size: 13px; font-weight: 600; }
+    .option-hex { color: rgba(255,255,255,0.4); font-size: 11px; letter-spacing: 1px; }
+    .option-strip {
+      padding: 9px 24px;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+      text-align: center;
+    }
+    .option-footer { padding: 12px 20px; }
+    .mock-save {
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+    }
+    .mock-title {
+      font-family: 'Alex Brush', cursive;
+      font-size: 24px;
+      font-weight: 400;
+      color: white;
+      padding: 10px 20px 0;
+      text-align: center;
+    }
+    .dark-text { color: #080F13 !important; }
+  </style>
+</head>
+<body>
+
+  <h1>Mercado Negro</h1>
+
+  <!-- ROJOS & VINOS -->
+  <p class="section-title">Rojos &amp; Vinos</p>
+  <div class="options">
+    <div class="option">
+      <div class="option-header"><span class="option-name">Vino tinto</span><span class="option-hex">#722F37</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#722F37;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#722F37;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Borgoña</span><span class="option-hex">#8B1A2A</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#8B1A2A;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#8B1A2A;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Terracota</span><span class="option-hex">#A0522D</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#A0522D;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#A0522D;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Frambuesa</span><span class="option-hex">#8B2252</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#8B2252;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#8B2252;">Guardar contacto</div></div>
+    </div>
+  </div>
+
+  <!-- AZULES -->
+  <p class="section-title">Azules &amp; Marinos</p>
+  <div class="options">
+    <div class="option">
+      <div class="option-header"><span class="option-name">Azul marino</span><span class="option-hex">#1B3A6B</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#1B3A6B;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#1B3A6B;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Azul cobalto</span><span class="option-hex">#2A52BE</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#2A52BE;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#2A52BE;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Azul pizarra</span><span class="option-hex">#3A5F8A</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#3A5F8A;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#3A5F8A;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Índigo</span><span class="option-hex">#4B0082</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#4B0082;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#4B0082;">Guardar contacto</div></div>
+    </div>
+  </div>
+
+  <!-- DORADOS & TIERRA -->
+  <p class="section-title">Dorados &amp; Tierra</p>
+  <div class="options">
+    <div class="option">
+      <div class="option-header"><span class="option-name">Dorado antiguo</span><span class="option-hex">#B8860B</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#B8860B;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#B8860B;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Ámbar</span><span class="option-hex">#C17A2A</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#C17A2A;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#C17A2A;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Bronce</span><span class="option-hex">#8C6239</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#8C6239;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#8C6239;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Mostaza</span><span class="option-hex">#9A7B00</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#9A7B00;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#9A7B00;">Guardar contacto</div></div>
+    </div>
+  </div>
+
+  <!-- MORADOS & ROSAS -->
+  <p class="section-title">Morados &amp; Rosas</p>
+  <div class="options">
+    <div class="option">
+      <div class="option-header"><span class="option-name">Ciruela</span><span class="option-hex">#5C2A6E</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#5C2A6E;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#5C2A6E;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Lavanda oscura</span><span class="option-hex">#6A4C8C</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#6A4C8C;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#6A4C8C;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Rosa antiguo</span><span class="option-hex">#8B4558</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#8B4558;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#8B4558;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Fucsia apagado</span><span class="option-hex">#7D3060</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#7D3060;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#7D3060;">Guardar contacto</div></div>
+    </div>
+  </div>
+
+  <!-- NEUTROS ELEGANTES -->
+  <p class="section-title">Neutros elegantes</p>
+  <div class="options">
+    <div class="option">
+      <div class="option-header"><span class="option-name">Blanco hueso</span><span class="option-hex">#D4C9B8</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#D4C9B8; color:#080F13;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#D4C9B8; color:#080F13;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Plata</span><span class="option-hex">#7A8A8C</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#7A8A8C;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#7A8A8C;">Guardar contacto</div></div>
+    </div>
+    <div class="option">
+      <div class="option-header"><span class="option-name">Cobre</span><span class="option-hex">#A05C3B</span></div>
+      <p class="mock-title">Mercado Negro</p>
+      <div class="option-strip" style="background:#A05C3B;">Pasteles · Postres · Antipastos · Charcutería</div>
+      <div class="option-footer"><div class="mock-save" style="background:#A05C3B;">Guardar contacto</div></div>
+    </div>
+  </div>
+
+</body>
+</html>
