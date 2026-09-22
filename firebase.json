@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "eureka-mn-store",
     "public": ".",
     "ignore": [
       "firebase.json",
